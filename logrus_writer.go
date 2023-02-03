@@ -1,9 +1,11 @@
-package elogx
+package xlog
 
 import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"github.com/rifflock/lfshook"
+	"github.com/sirupsen/logrus"
 	"io"
 	"log"
 	"runtime"
@@ -12,9 +14,6 @@ import (
 	"github.com/crx666/xlog/config"
 
 	"github.com/crx666/xlog/common"
-
-	"github.com/rifflock/lfshook"
-	"github.com/sirupsen/logrus"
 )
 
 const (

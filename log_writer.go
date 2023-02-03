@@ -1,4 +1,4 @@
-package elogx
+package xlog
 
 import (
 	"encoding/json"

@@ -1,7 +1,8 @@
-package elogx
+package xlog
 
 import (
 	"fmt"
+	"github.com/sirupsen/logrus"
 	"testing"
 	"time"
 
@@ -10,7 +11,6 @@ import (
 	"github.com/crx666/xlog/common"
 
 	"errors"
-	"github.com/sirupsen/logrus"
 )
 
 type Mgs struct {

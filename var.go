@@ -1,4 +1,4 @@
-package elogx
+package xlog
 
 const (
 	JsonEncodingType = iota

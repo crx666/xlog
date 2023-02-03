@@ -1,7 +1,8 @@
-package elogx
+package xlog
 
 import (
 	"fmt"
+	"go.uber.org/zap"
 	"io"
 	"os"
 	"time"
@@ -11,8 +12,6 @@ import (
 	"github.com/crx666/xlog/common"
 
 	"go.uber.org/zap/zapcore"
-
-	"go.uber.org/zap"
 )
 
 const (
