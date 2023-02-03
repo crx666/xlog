@@ -93,6 +93,9 @@ func (w *ZapWriter) GetLevel() int {
 }
 
 func (w *ZapWriter) SetConfig(config *config.LogConfig) {
+	if config == nil {
+		return
+	}
 	err := common.LogConfigCheck(config)
 	if err != nil {
 		panic(err)

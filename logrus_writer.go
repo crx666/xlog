@@ -172,6 +172,9 @@ func (w *LogrusWriter) SetStackOffset(offset int) {
 }
 
 func (w *LogrusWriter) SetConfig(config *config.LogConfig) {
+	if config == nil {
+		return
+	}
 	err := common.LogConfigCheck(config)
 	if err != nil {
 		panic(err)

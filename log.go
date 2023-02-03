@@ -8,7 +8,7 @@ import (
 var (
 	TimeFormat = "2006-01-02 15:04:05"
 	writer     = new(LogWriter)
-	ConsoleLog = NewConsoleWriter(DebugLevel, JsonEncodingType)
+	ConsoleLog = NewConsoleWriter(DebugLevel, TextEncodingType)
 )
 
 type LogEntryWithFields map[string]interface{}
@@ -21,7 +21,7 @@ func SetWriter(w Writer) {
 func GetWriter() Writer {
 	w := writer.GetWriter()
 	if w == nil {
-		w = NewConsoleWriter(DebugLevel, JsonEncodingType)
+		w = ConsoleLog
 		SetWriter(w)
 	}
 	return w
@@ -31,6 +31,14 @@ func SetLevel(level string) {
 	if writer.GetWriter() != nil {
 		GetWriter().SetLevel(level)
 	}
+}
+
+func Close() {
+	w := GetWriter()
+	if w != nil {
+		w.Close()
+	}
+	CloseAllWrite()
 }
 
 func GetLevel() int {
