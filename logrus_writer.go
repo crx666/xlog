@@ -9,9 +9,9 @@ import (
 	"runtime"
 	"strings"
 
-	"xlog/config"
+	"github.com/crx666/xlog/config"
 
-	"xlog/common"
+	"github.com/crx666/xlog/common"
 
 	"github.com/rifflock/lfshook"
 	"github.com/sirupsen/logrus"

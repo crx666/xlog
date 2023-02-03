@@ -3,6 +3,7 @@ package common
 import (
 	"errors"
 	"fmt"
+	"github.com/crx666/xlog/config"
 	"gopkg.in/yaml.v3"
 	"io/ioutil"
 	"math/rand"
@@ -12,7 +13,6 @@ import (
 	"strings"
 	"time"
 	"unsafe"
-	"xlog/config"
 )
 
 const (

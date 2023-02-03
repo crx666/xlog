@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"xlog/config"
+	"github.com/crx666/xlog/config"
 
-	"xlog/common"
+	"github.com/crx666/xlog/common"
 
 	"errors"
 	"github.com/sirupsen/logrus"

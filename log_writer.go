@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"xlog/config"
+	"github.com/crx666/xlog/config"
 )
 
 type logWriter struct {

@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"xlog/config"
+	"github.com/crx666/xlog/config"
 
-	"xlog/common"
+	"github.com/crx666/xlog/common"
 )
 
 type Writer interface {

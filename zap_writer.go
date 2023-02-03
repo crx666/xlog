@@ -6,9 +6,9 @@ import (
 	"os"
 	"time"
 
-	"xlog/config"
+	"github.com/crx666/xlog/config"
 
-	"xlog/common"
+	"github.com/crx666/xlog/common"
 
 	"go.uber.org/zap/zapcore"
 
