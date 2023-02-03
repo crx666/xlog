@@ -1,0 +1,17 @@
+log_dir: "./log/$ip/$date"  # 日志目录名字 支持$ip $rand $date
+log_name: "info_$ti_$rand"      # 日志名字 $day $hour $minute  log_dir和log_name都为空字符串代表不写日志文件
+err_log_name: "err_$ti_$rand"   # 如果不为空  错误信息和正常信息分开文件打印
+log_level: "debug"    # 日志等级
+is_prod: true         # 是否正式环境  zap格式测试环境下err及以上等级调用 会有堆栈打印
+is_console: true      # 控制台是否输出
+is_call: true        # 是否需要打印调用函数及行号打印
+log_mark: "normal"    # 区分不同日志对象
+#rotatelog:
+#  max_save:  2
+#  split_day: 0
+#  split_hour: 0
+#  split_minute: 1
+#  link_name: ""   #软连接名称
+lumberjack:
+  max_size: 1
+  split_time: 1

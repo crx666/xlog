@@ -1,0 +1,7 @@
+configs:
+  - config:
+    log_dir: "./log/$ip"  # 日志目录名字 支持$ip $rand
+    log_name: "info"      # 日志名字    log_dir和log_name都为空字符串代表不写日志文件
+  - config:
+    log_dir: "./log/$rand"  # 日志目录名字 支持$ip $rand
+    log_name: "debug"      # 日志名字    log_dir和log_name都为空字符串代表不写日志文件
