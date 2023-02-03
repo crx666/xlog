@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"crx_log/common"
+	"xlog/common"
 
 	"github.com/pkg/errors"
 )

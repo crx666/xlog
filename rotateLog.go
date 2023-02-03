@@ -4,11 +4,11 @@ import (
 	"strings"
 	"time"
 
-	"crx_log/config"
+	"xlog/config"
 
-	"crx_log/common"
+	"xlog/common"
 
-	"crx_log/rotatelogs"
+	"xlog/rotatelogs"
 )
 
 func GetRotateLogWriter(dir, file string, cfg *config.Rotatelog) LogFileWrite {

@@ -35,7 +35,7 @@ import (
 	"sync"
 	"time"
 
-	"crx_log/common"
+	"xlog/common"
 )
 
 const (

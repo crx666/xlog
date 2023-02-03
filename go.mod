@@ -1,4 +1,4 @@
-module crx_log
+module xlog
 
 go 1.18
 

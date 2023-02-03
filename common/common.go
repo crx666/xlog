@@ -1,7 +1,6 @@
 package common
 
 import (
-	"crx_log/config"
 	"errors"
 	"fmt"
 	"gopkg.in/yaml.v3"
@@ -13,6 +12,7 @@ import (
 	"strings"
 	"time"
 	"unsafe"
+	"xlog/config"
 )
 
 const (

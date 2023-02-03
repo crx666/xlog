@@ -3,11 +3,11 @@ package elogx
 import (
 	"strings"
 
-	"crx_log/common"
+	"xlog/common"
 
-	"crx_log/config"
+	"xlog/config"
 
-	"crx_log/lumberjack"
+	"xlog/lumberjack"
 )
 
 func GetLumberjackLogWriter(dir, file string, cfg *config.Lumberjack) LogFileWrite {
